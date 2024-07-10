@@ -20,7 +20,7 @@ function Body({ data, title }) {
             <h1 className="text-lg font-bold">{`${
               title ? title : "Berita Terkini"
             }`}</h1>
-            {data?.slice(0, 5)?.map((data) => (
+            {data?.slice(0, 3)?.map((data) => (
               <CardBerita data={data} key={data.id} />
             ))}
           </div>
@@ -36,7 +36,7 @@ function Body({ data, title }) {
               blurDataURL="/BANNER_DPRD_KOTA.webp"
             />
           </div>
-          {data?.slice(6, 10)?.map((data) => (
+          {data?.slice(4, 7)?.map((data) => (
             <CardBerita data={data} key={data.id} />
           ))}
           <div className="relative h-32 md:h-60 object-cover">
@@ -61,7 +61,7 @@ function Body({ data, title }) {
       <VideoSection title="Video" />
       <div className="flex justify-center p-5 sm:p-6 lg:p-10 flex-col md:flex-row w-full gap-4">
         <div className="flex flex-col gap-4 w-full md:w-3/4">
-          {data?.slice(11, 15)?.map((data) => (
+          {data?.slice(8, 11)?.map((data) => (
             <CardBerita data={data} key={data.id} />
           ))}
         </div>
@@ -71,7 +71,7 @@ function Body({ data, title }) {
       </div>
       <NetworkSection title="Network" />
       <div className="flex flex-col px-4 md:px-10 gap-2 self-start max-w-full">
-        {data?.slice(16, 20)?.map((data) => (
+        {data?.slice(12, 15)?.map((data) => (
           <CardBerita data={data} key={data.id} />
         ))}
       </div>
@@ -80,7 +80,7 @@ function Body({ data, title }) {
         <h3 className="font-semibold">Lihat Semua</h3>
       </div>
       <div className="flex flex-col px-4 md:px-10 gap-2 self-start max-w-full">
-        {data?.slice(21, 24)?.map((data) => (
+        {data?.slice(16, 20)?.map((data) => (
           <CardBerita data={data} key={data.id} />
         ))}
       </div>

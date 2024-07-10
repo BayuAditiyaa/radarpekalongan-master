@@ -16,7 +16,7 @@ export default async function Home() {
   const { data } = await supabase
     .from("data-berita")
     .select()
-    .range(0, 24)
+    .range(0, 20)
     .order("id", { ascending: false });
 
   return <Body data={data} title="Berita Terkini" />;
