@@ -54,8 +54,8 @@ function Body({ data, title }) {
         </div>
         <div className="flex flex-col gap-4 w-full md:w-1/4">
           <CatatanDisway />
-          <Terpopuler data={data} />
-          <Terkini data={data} />
+          <Terpopuler />
+          <Terkini />
         </div>
       </div>
       <VideoSection title="Video" />
