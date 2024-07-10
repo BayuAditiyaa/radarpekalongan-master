@@ -21,7 +21,7 @@ export default function Navbar() {
   const [query, setQuery] = useState("");
 
   const handleSearch = () => {
-    router.push(`/search?q=${query}`);
+    router.push(`/search?search=${query}`);
   };
 
   return (

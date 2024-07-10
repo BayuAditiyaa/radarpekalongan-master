@@ -11,6 +11,7 @@ export default function page() {
   const searchParams = useSearchParams();
 
   const newParams = searchParams.get("search");
+  console.log(newParams);
 
   const [data, setData] = useState(null);
   const [page, setPage] = useState(1);
@@ -55,7 +56,6 @@ export default function page() {
         handleNext={handleNext}
         handlePrevious={handlePrevious}
       />
-      ;
     </Suspense>
   );
 }
