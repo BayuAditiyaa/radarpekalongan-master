@@ -17,6 +17,8 @@ export default function ListKonten() {
   const [totalPages, setTotalPages] = useState(1);
   const pageSize = 10; // Number of items per page
 
+  console.log(news);
+
   const fetchData = async (kategori = "") => {
     setLoading(true);
     if (kategori == "") {
